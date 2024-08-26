@@ -1,0 +1,18 @@
+    <!-- Use this script in conjuction with apache2 to run a simple HTTP webpage that downloads a file when the link is clicked. This is to be used with testing. -->
+</head>
+<body>
+    <h1>Download File Example</h1>
+    <a id="downloadLink" href="#" onclick="downloadFile()">Download File</a>
+
+    <script>
+        function downloadFile() {
+            const link = document.createElement('a');
+            link.href = 'goku.jpg'; // Replace with the actual file path, default is a picture of goku named goku.jpg
+            link.download = 'download.jpg'; // The name of the file to be downloaded
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
