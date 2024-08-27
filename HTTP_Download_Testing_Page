@@ -3,6 +3,8 @@
 <body>
     <h1>Download File Example</h1>
     <a id="downloadLink" href="#" onclick="downloadFile()">Download File</a>
+    <!-- Alternative to use JS is to just simply use the download attribute -->
+    <a id="downloadLink" href="goku.jpg" download="goku_download.jpg"">Download File</a>
 
     <script>
         function downloadFile() {
